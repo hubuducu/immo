@@ -1,13 +1,12 @@
 <template name="imms">
+  imms
+
+    {{> immeubles}}
+</template>
+
+
+<template name="immeubles">
     {{#each immeuble in immeubles}}
     {{immeuble.name}}
     {{/each}}
-    {{> newImms}}
-</template>
-<template name="newImms">
-   <form class="form-group">
-     <label for="name">Name</label>
-      <input type="text" name="name" id="name">
-<button id="clickB">click</button> 
-   </form>
 </template>
