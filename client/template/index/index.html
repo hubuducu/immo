@@ -1,0 +1,14 @@
+<head>
+  <title>immoLLusque</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  {{> imms}}
+
+</body>
+<template name="immeubles">
+    {{#each immeuble in immeubles}}
+    {{immeuble.name}}
+    {{/each}}
+</template>
