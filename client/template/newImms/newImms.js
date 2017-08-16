@@ -4,5 +4,6 @@ Template.newImms.events({
     var im = {};
     im.name =  template.find("#name").value;
     Meteor.call("Immeuble.Save",im);
+    FlowRouter.go("/imms");
   }
 });
