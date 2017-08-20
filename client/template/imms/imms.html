@@ -6,7 +6,24 @@
 
 
 <template name="immeubles">
+  <a class="btn-floating btn-large waves-effect waves-light red" href="/newImms" ><i class="material-icons">add</i></a>
+  
+  <div class="row">
     {{#each immeuble in immeubles}}
-    {{immeuble.name}}
+
+    <div class="col s4 m4">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">{{immeuble.name}}</span>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
     {{/each}}
+  </div>
 </template>
